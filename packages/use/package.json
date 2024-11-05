@@ -1,0 +1,41 @@
+{
+  "name": "@mixte/use",
+  "type": "module",
+  "version": "1.13.2",
+  "author": "Wei Zhang <https://github.com/Zhang-Wei-666>",
+  "license": "MIT",
+  "homepage": "https://github.com/MoomFE/mixte#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MoomFE/mixte.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MoomFE/mixte/issues"
+  },
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    },
+    "./register": {
+      "types": "./dist/register.d.ts",
+      "import": "./dist/register.mjs",
+      "require": "./dist/register.cjs"
+    },
+    "./*": "./*"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "*.d.ts",
+    "dist"
+  ],
+  "dependencies": {
+    "@vueuse/core": "*",
+    "mixte": "workspace:*",
+    "vue-demi": "*"
+  }
+}
