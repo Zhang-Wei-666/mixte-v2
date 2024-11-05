@@ -1,0 +1,42 @@
+{
+  "name": "@mixte/components",
+  "type": "module",
+  "version": "2.5.0",
+  "author": "Wei Zhang <https://github.com/Zhang-Wei-666>",
+  "license": "MIT",
+  "homepage": "https://github.com/MoomFE/mixte#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MoomFE/mixte.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MoomFE/mixte/issues"
+  },
+  "sideEffects": false,
+  "exports": {
+    "./auto-grid": {
+      "types": "./dist/auto-grid.d.ts",
+      "import": "./dist/auto-grid.mjs",
+      "require": "./dist/auto-grid.cjs"
+    },
+    "./list-auto-grid": {
+      "types": "./dist/list-auto-grid.d.ts",
+      "import": "./dist/list-auto-grid.mjs",
+      "require": "./dist/list-auto-grid.cjs"
+    },
+    "./*": "./*"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "*.d.ts",
+    "dist"
+  ],
+  "dependencies": {
+    "@mixte/use": "workspace:*",
+    "@vueuse/core": "*",
+    "mixte": "workspace:*",
+    "vue-demi": "*"
+  }
+}
